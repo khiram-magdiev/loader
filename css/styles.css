@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	background: #000;
+	padding: 35px 35px;
+}
+
+.loader {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50% -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader span {
+	display: block;
+	height: 15px;
+	width: 15px;
+	background: #19e3d5;
+	margin: 0 7px;
+	border-radius: 50%;
+	animation: 2s upDown infinite;
+}
+
+.loader span:first-child {
+	animation-delay: .15s;
+}
+
+.loader span:nth-child(2) {
+	animation-delay: .3s;
+}
+
+.loader span:nth-child(3) {
+	animation-delay: .45s;
+}
+
+.loader span:nth-child(4) {
+	animation-delay: .6s;
+}
+
+.loader span:last-child {
+	animation-delay: .75s;
+}
+
+@keyframes upDown {
+	0% {
+		width: 15px;
+		height: 15px;
+		background: #19e3d5;
+	}
+	50% {
+		width: 60px;
+		height: 60px;
+		background: #d33deb;
+	}
+	100% {
+		width: 15px;
+		height: 15px;
+		background: #f00e43;
+	}
+}
+
+/*================== 2 variant =======================*/
+
+/*.content-circle {
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: relative;
+	left: 0;
+
+/*	animation-name: white-circle;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay: 2s;*/
+	animation: white-circle 2s ease-in-out infinite alternate 2s, 
+	red-circle 5s ease infinite alternate 2s;
+}
+
+.content:hover .content-circle {
+	animation-play-state: paused;
+}
+
+
+
+@keyframes white-circle {
+	0% {
+		left: 0;
+	}
+	50% {
+		border-radius: 0;
+	}
+	100% {
+		left: 500px;
+	}
+}
+
+@keyframes red-circle {
+	0% {
+		left: 0;
+	}
+	50% {
+		background: green;
+	}
+	100% {
+		left: 500px;
+	}
+}
+
+*/
